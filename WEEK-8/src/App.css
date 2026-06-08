@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  /* Light unique background */
+  background: linear-gradient(
+    135deg,
+    #e0f2fe,
+    #f0f9ff,
+    #fefce8
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.weather-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+/* Glass Effect Card */
+.weather-card {
+  width: 90%;
+  max-width: 1100px;
+
+  background: rgba(255,255,255,0.6);
+
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.1),
+    0 0 20px rgba(255,255,255,0.5);
+}
+
+.weather-card h1 {
+  font-size: 3rem;
+  color: #0f172a;
+  margin-bottom: 30px;
+}
+
+.location {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 40px;
+}
+
+/* Cards Layout */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 30px;
+  text-align: center;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+.circle {
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(59,130,246,0.15);
+  top: -80px;
+  left: -80px;
+}
+
+.circle2 {
+  width: 400px;
+  height: 400px;
+  background: rgba(250,204,21,0.15);
+  bottom: -100px;
+  right: -100px;
+}
