@@ -1,0 +1,126 @@
+/* Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Full Page Background */
+
+body{
+
+  font-family:Arial,sans-serif;
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2979ff,
+    #ff4db8
+  );
+
+}
+
+/* Center content */
+
+.page{
+
+  min-height:100vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+/* White Card */
+
+.card{
+
+  background:white;
+
+  width:500px;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:
+  0 10px 40px
+  rgba(0,0,0,.2);
+
+}
+
+/* Text */
+
+.card h2{
+
+  color:#222;
+
+  margin-bottom:20px;
+
+}
+
+button{
+
+  padding:12px 24px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#2979ff;
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+button:hover{
+
+  background:#ff4db8;
+
+}
+
+ul{
+
+  list-style:none;
+
+}
+
+li{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin:12px 0;
+
+  padding:14px;
+
+  border:1px solid #ddd;
+
+  border-radius:10px;
+
+}
+
+a{
+
+  color:#2979ff;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+}
